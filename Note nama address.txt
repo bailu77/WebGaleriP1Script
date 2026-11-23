@@ -1,0 +1,3 @@
+Alamat Kontrak Sepolia: 0xE3f23043609776c5780C9956b67a98D722E00Ebd
+Jaringan: Sepolia Testnet
+Catatan Akses Kurator: Saat ini hanya walletku (0xE3f23043609776c5780C9956b67a98D722E00Ebd) kalua mau akses minting pakai meta mask sendiri kirim ke aku alamat kontrak wallet sepolia nya yaa.

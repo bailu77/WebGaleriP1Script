@@ -1,0 +1,17 @@
+{
+  "jaringan": "hardhat",
+  "alamatKontrak": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "adminDanKurator": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "deploy": {
+    "txHash": "0xb9c9bf874000c7116d18c402ff3151526b13b839c54aa857c9ad5ed0dbe35ade",
+    "gasUsed": "3178651"
+  },
+  "minting": {
+    "txHash": "0x1098c7c1ac41579272c9d99cd55b740483fa44209ace278f8bf9a64c83c24183",
+    "gasUsed": "286913"
+  },
+  "transfer": {
+    "txHash": "0x01efea8798bf275da68bb047d7209ea0bc18c4dedfd012e1a50d659a9fb54448",
+    "gasUsed": "58479"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "jaringan": "sepolia",
+  "alamatKontrak": "0xF2517341bFA5C6C43f1095315d3D5b23431e4B26",
+  "adminDanKurator": "0xE3f23043609776c5780C9956b67a98D722E00Ebd",
+  "deploy": {
+    "txHash": "0x88412269ffb397b0b1e5fb51a79ca13c6f91a328f79f06b2f6779cb8a9a202fa",
+    "gasUsed": "22224157"
+  },
+  "minting": {
+    "txHash": "0x03e7e32875883cea4afd8c8654be37d3aca0f49c79bc5891a91009a62a419fe2",
+    "gasUsed": "1252024"
+  }
+}
