@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Integrasi Galeri - API, IPFS & MetaMask</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-container">
+    <header class="header-card">
+      <div class="header-top">
+        <div class="title-group">
+          <div class="badge-row">
+            <span class="badge">MODE LIVE</span>
+            <span class="badge badge-purple">SEPOLIA TESTNET</span>
+            <span class="badge badge-purple">CNN + PINATA IPFS</span>
+          </div>
+          <h2>Integrasi Galeri Digital (Mode Live)</h2>
+        </div>
+        <button id="btnConnect" type="button" class="btn-secondary">Hubungkan MetaMask (Sepolia)</button>
+      </div>
+      <p id="walletInfo" class="wallet-box">Wallet: belum terhubung</p>
+    </header>
+
+    <section class="grid-layout">
+      <div class="card">
+        <h3 class="card-title">1. Data Karya & Unggah Aset</h3>
+
+        <div class="field-group">
+          <label for="idKaryaInput">ID Karya (unik)</label>
+          <input id="idKaryaInput" type="text" value="KARYA-001" />
+        </div>
+
+        <div class="field-group">
+          <label for="creatorInput">Alamat Kreator (opsional, default wallet aktif)</label>
+          <input id="creatorInput" type="text" size="46" placeholder="0x..." />
+        </div>
+
+        <div class="field-group">
+          <label for="titleInput">Judul Karya</label>
+          <input id="titleInput" type="text" value="Karya Galeri" />
+        </div>
+
+        <div class="field-group">
+          <label for="orderInput">Nomor Urut</label>
+          <input id="orderInput" type="number" value="1" min="1" />
+        </div>
+
+        <div class="field-group">
+          <label for="fileInput">Pilih Gambar</label>
+          <input id="fileInput" type="file" accept="image/*" />
+        </div>
+
+        <button id="btnAnalyze" type="button">Analisis Gambar (CNN + Deskripsi)</button>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">2. Kurasi Metadata & Minting</h3>
+
+        <p id="confidenceInfo" class="confidence-box"></p>
+
+        <div class="field-group">
+          <label for="categorySelect">Kategori (bisa dikoreksi kurator)</label>
+          <select id="categorySelect">
+            <option value="Foto">Foto</option>
+            <option value="Ilustrasi">Ilustrasi</option>
+            <option value="Poster">Poster</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="descInput">Deskripsi (bisa dikoreksi kurator)</label>
+          <textarea id="descInput" rows="3" cols="50"></textarea>
+        </div>
+
+        <button id="btnPublish" type="button" class="btn-mint">Unggah Aset, IPFS &amp; Mint ke Sepolia</button>
+      </div>
+    </section>
+
+    <section class="output-card">
+      <h3 class="card-title">3. Hasil IPFS &amp; Status Transaksi</h3>
+      <div id="ipfsInfo"></div>
+      <p id="statusBox">Status: siap.</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
